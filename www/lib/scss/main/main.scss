@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
 $light: #ffffff !default;
 $stable: #ccc !default;
 $positive: #e62739 !default;
@@ -16,28 +17,10 @@ $base-color: #212121 !default;
 $icon-color: #7a7a7a !default;
 $menu-color: #8A8A8A !default;
 $border-color: #eee;
-$color1: #909090;
-$color2: #1d224b;
-$color3: #dedfe1;
-$color4: #7EBCDA;
-$color5: #f5f5f5;
-$color6: #555555;
-$color7: #B0B0B0;
-$color8: #B7b7b7;
-$font-family-sans-serif: "Lato", "Nunito", "Roboto Slab", "Helvetica Neue", "Roboto", "Segoe UI", sans-serif !default;
-$font-family-light-sans-serif: "Lato-light", "Nunito", "Roboto Slab", "HelveticaNeue-Light", "Roboto-Light", "Segoe UI-Light", sans-serif-light !default;
-$pro-bg-image: url(../img/background/1.jpg) no-repeat center center;
-$pro-bg-images: url(../img/background/4.jpg) no-repeat center center;
-$card-box-shadow: none !default;
-$border-radius-base: 0 !default;
-$border-radius-large: 0 !default;
-$border-radius-small: 0 !default;
-$button-border-radius: 0 !default;
-$button-border-width: 0 !default;
-//$line-height-base:                1.8 !default; // 20/14
-$font-size-base: 14px !default;
-$font-weight: 300;
-$card-border-radius: 0 !default;
+
+$font-family-sans-serif: "Dosis", "lane.posh", sans-serif !default;
+$font-family-light-sans-serif: "Dosis", "lane.posh", sans-serif-light !default;
+
 @mixin square($some-number) {
   width: $some-number;
   height: $some-number;
@@ -74,60 +57,13 @@ $card-border-radius: 0 !default;
   width: $width;
   height: $height;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Roboto Slab' !important;
-}
+
 //***** Font Famliy ********
 @font-face {
-  font-family: 'Lato';
-  src: url(../fonts/Lato-Bold.ttf);
-  font-weight: 700;
+  font-family: 'lane.posh';
+  src: url(../fonts/lane.posh.ttf);
 }
-@font-face {
-  font-family: 'Lato';
-  src: url(../fonts/Lato-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url(../fonts/Lato-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url(../fonts/Nunito-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url(../fonts/Nunito-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'Nunito';
-  src: url(../fonts/Nunito-Regular.ttf);
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url(../fonts/RobotoSlab-Bold.ttf);
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url(../fonts/RobotoSlab-Light.ttf);
-  font-weight: 300;
-}
-@font-face {
-  font-family: 'Roboto Slab';
-  src: url(../fonts/RobotoSlab-Regular.ttf);
-  font-weight: 400;
-}
+
 a {
   text-decoration: none;
 }
