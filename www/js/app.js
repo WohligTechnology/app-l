@@ -41,6 +41,33 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.lie', {
+    url: '/lie',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/lie.html',
+        controller: 'LieCtrl'
+      }
+    }
+  })
+  .state('app.goops', {
+    url: '/goops',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/goops.html',
+        controller: 'GoopsCtrl'
+      }
+    }
+  })
+  .state('app.sexpert', {
+    url: '/sexpert',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/sexpert.html',
+        controller: 'SexpertCtrl'
+      }
+    }
+  })
 
   .state('app.love', {
       url: '/love',
