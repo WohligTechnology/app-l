@@ -16,6 +16,7 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,300,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,500italic,300,300italic,700italic,700,900,900italic);
 @font-face {
   font-family: 'lane.posh';
   src: url(../fonts/lane.posh.ttf); }
@@ -32,6 +33,9 @@ a {
 .logo {
   width: 90px;
   padding-top: 9px; }
+
+.title {
+  color: #fff !important; }
 
 .title-left {
   text-align: center !important;
@@ -3364,7 +3368,7 @@ body,
   word-wrap: break-word;
   font-size: 14px;
   font-family: -apple-system;
-  font-family: "Dosis", "lane.posh", sans-serif;
+  font-family: "Dosis", "lane.posh", "Roboto", sans-serif;
   line-height: 20px;
   text-rendering: optimizeLegibility;
   -webkit-backface-visibility: hidden;
@@ -3620,7 +3624,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: #171717;
   font-weight: 500;
-  font-family: "Dosis", "lane.posh", sans-serif;
+  font-family: "Dosis", "lane.posh", "Roboto", sans-serif;
   line-height: 1.2; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
@@ -5129,7 +5133,7 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
   white-space: nowrap;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Dosis", "lane.posh", sans-serif;
+  font-family: "Dosis", "lane.posh", "Roboto", sans-serif;
   opacity: 0.7; }
   .tab-item:hover {
     cursor: pointer; }
@@ -7559,7 +7563,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "Dosis", "lane.posh", sans-serif; }
+  font-family: "Dosis", "lane.posh", "Roboto", sans-serif; }
 
 .item-input {
   display: -webkit-box;
