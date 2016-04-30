@@ -68,6 +68,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.love-quiery', {
+    url: '/love-quiery',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/love-quiery.html',
+        controller: 'LoveQuieryCtrl'
+      }
+    }
+  })
   .state('app.sexpert', {
     url: '/sexpert',
     views: {
