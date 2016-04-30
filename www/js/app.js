@@ -59,6 +59,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.confessions', {
+    url: '/confessions',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/confessions.html',
+        controller: 'ConfessionsCtrl'
+      }
+    }
+  })
   .state('app.sexpert', {
     url: '/sexpert',
     views: {

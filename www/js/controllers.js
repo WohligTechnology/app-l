@@ -18,5 +18,8 @@ angular.module('starter.controllers', [])
 .controller('SexpertCtrl', function($scope) {
 
 })
+.controller('ConfessionsCtrl', function($scope) {
+
+})
 .controller('HomeCtrl', function($scope, $stateParams) {
 });
