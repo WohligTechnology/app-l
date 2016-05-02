@@ -4,20 +4,18 @@ $light: #ffffff !default;
 $stable: #3d3d3d !default;
 $positive: #f02b67 !default;
 $calm: #0cceff !default;
-$balanced: #0fff3c !default;
+$balanced:  #2bc900 !default;
 $energized: #ffae00 !default;
-$assertive: #e1542e !default;
+$assertive: #ff0f0f !default;
 $royal: #b026ff !default;
 $blue: #218dfb !default;
-
 $base-color: #171717 !default;
-
 $color1: #898989;
 $color2: #969696;
-
+$color3: #323232;
+$color4: #25d045;
 $font-family-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif !default;
 $font-family-light-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif-light !default;
-
 @mixin square($some-number) {
   width: $some-number;
   height: $some-number;
@@ -36,7 +34,7 @@ $font-family-light-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif-light 
   border-radius: $radius;
 }
 @function grayscale($value) {
-  @return #{ "grayscale(" + $value + ")" };
+   @return #{ "grayscale(" + $value + ")" };
 }
 @mixin filter($properties) {
   // Your vendor prefixing stuff here, I am using Bourbon:
@@ -54,40 +52,195 @@ $font-family-light-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif-light 
   width: $width;
   height: $height;
 }
-
+//color2
+.positive-color {
+  color: $positive;
+}
+.balanced-color {
+  color: $balanced;
+}
+.energized-color {
+  color: $energized;
+}
 //***** Font Famliy ********
 @font-face {
   font-family: 'lane.posh';
-  src: url(../fonts/lane.posh.ttf);
+  src: url("../fonts/lane.posh.ttf");
 }
-
 a {
   text-decoration: none;
 }
-
 //padding-margin
-
-.padding0{
-  padding: 0px;
+.padding0 {
+  padding: 0 !important;
 }
-.margin{
-  margin: 0px;
+.margin0 {
+  margin: 0;
 }
-.logo{
+.logo {
   width: 90px;
-padding-top: 9px;
-
+  padding-top: 9px;
 }
 //header
 .title {
-    color: #fff !important;
+  color: #fff !important;
 }
 .title-left {
-    text-align: center !important;
-    left: 0px !important;
+  text-align: center !important;
+  left: 0 !important;
 }
 .bar-stable {
-  .button{
+  background-image: none !important;
+  .button {
     color: #fff !important;
   }
+}
+.pos-rel {
+  position: relative;
+  overflow: hidden;
+}
+.pad15 {
+  padding: 15px;
+}
+.pad1 {
+  padding: 40px 10px 0;
+}
+.text-up-side {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.31);
+  top: 0;
+  font-size: 10px;
+  line-height: 120%;
+}
+.text-up {
+  text-transform: uppercase;
+}
+.text-head-up {
+  position: absolute;
+  top: 0;
+  padding: 6px 25px 0 0;
+  h4 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+.top-trans {
+  top: 35% !important;
+  transform: translatey(-50%);
+}
+.goops-section {
+  background: url('../img/goops.jpg')no-repeat;
+  background-size: cover;
+  margin-top: -5px;
+  padding: 15px 15px 20px;
+}
+.box1 {
+  background: #232323;
+  padding: 10px 0 0;
+  margin: 10px 0 0;
+  border-right: 3px solid $blue;
+}
+.text-data {
+  padding: 0 0 0 12px;
+  h4 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
+.slider-pager-page {
+  color: $blue !important;
+}
+.box {
+  padding-bottom: 30px;
+}
+.sliders {
+  .slider-pager {
+    bottom: 0;
+  }
+}
+.border-blue {
+  border-bottom: 1px solid $calm;
+}
+.blue-color {
+  color: $calm;
+}
+.border-green {
+  border-bottom: 1px solid $balanced;
+}
+.green-color {
+  color: $balanced;
+}
+.border-red {
+  border-bottom: 1px solid $assertive;
+}
+.red-color {
+  color: $assertive;
+}
+.f300 {
+  font-weight: 300;
+}
+.font-robot-italic {
+  font-family: "roboto";
+  font-style: italic;
+}
+.display-inline {
+  display: inline-block;
+}
+.mar15 {
+  margin: 15px 0 6px;
+}
+.confession {
+  padding: 0px 0px 15px 0px;
+  border-bottom: 1px solid #DADADA;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.desc {
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: $color3;
+  }
+}
+.list-more {
+  ul {
+    display: block;
+    li {
+      display: inline-block;
+      border-right: 1px solid #7d7d7d;
+      padding: 0 6px;
+      line-height: 1;
+      color: #7d7d7d;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
+.read-more {
+  span {
+    a {
+      color: #7d7d7d;
+      font-weight: 300;
+    }
+  }
+}
+.view-more {
+  margin-top: 10px;
+  button {
+    text-transform: capitalize;
+    padding: 0 20px;
+    min-height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius:0px;
+  }
+}
+.pl0{
+      padding-left: 0px;
+}
+.pull-right{
+  float: right;
 }
