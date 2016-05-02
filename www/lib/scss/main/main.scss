@@ -4,7 +4,7 @@ $light: #ffffff !default;
 $stable: #3d3d3d !default;
 $positive: #f02b67 !default;
 $calm: #0cceff !default;
-$balanced:  #2bc900 !default;
+$balanced: #2bc900 !default;
 $energized: #ffae00 !default;
 $assertive: #ff0f0f !default;
 $royal: #b026ff !default;
@@ -192,7 +192,7 @@ a {
   margin: 15px 0 6px;
 }
 .confession {
-  padding: 0px 0px 15px 0px;
+  padding: 0 0 15px;
   border-bottom: 1px solid #DADADA;
   margin-left: 25px;
   margin-right: 25px;
@@ -235,12 +235,81 @@ a {
     min-height: 30px;
     font-size: 18px;
     line-height: 30px;
-    border-radius:0px;
+    border-radius: 0;
   }
 }
-.pl0{
-      padding-left: 0px;
+.pl0 {
+  padding-left: 0;
 }
-.pull-right{
+.pull-right {
   float: right;
+}
+.love-bg {
+  background: url('../img/love-bg.jpg')no-repeat;
+  background-size: cover;
+}
+.page-title {
+  h4 {
+    margin: 0;
+    color: $energized;
+    text-transform: capitalize;
+    padding: 25px 0;
+  }
+}
+.fav {
+  position: absolute;
+  right: -15px;
+  top: -18px;
+  img {
+    width: 30px;
+  }
+}
+.all-title {
+  span {
+    color: #7d7d7d;
+    font-size: 15px;
+  }
+  h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+  }
+}
+.view-count {
+  h4 {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+    color: $color2;
+    span {
+      display: block;
+      text-align: center;
+      line-height: 1;
+    }
+  }
+}
+.desc-all {
+  p {
+    color: #171717;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.card {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: visible !important;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.3) !important;
+  border-radius: 0px !important;
+}
+.padd7 {
+  padding: 7px 7px 0;
+}
+.list-data {
+  margin-top: -40px;
+}
+.bg-black {
+  background-color: #000;
 }
