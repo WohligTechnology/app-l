@@ -197,6 +197,14 @@ a {
   background: url("../img/lie-bg.jpg") no-repeat;
   background-size: cover; }
 
+.lust-bg {
+  background: url("../img/lust-bg.jpg") no-repeat;
+  background-size: cover; }
+
+.goop-bg {
+  background: url("../img/goops-bg.jpg") no-repeat;
+  background-size: cover; }
+
 .page-title h4 {
   margin: 0;
   color: #ffae00;
