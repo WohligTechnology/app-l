@@ -26,6 +26,9 @@ $dark:                            #444 !default;
 .energized-color {
   color: #ffae00; }
 
+.calm-color {
+  color: #0cceff; }
+
 @font-face {
   font-family: 'lane.posh';
   src: url("../fonts/lane.posh.ttf"); }
@@ -259,6 +262,32 @@ a {
 
 .bg-black {
   background-color: #000; }
+
+.confes-box {
+  border: 2px solid #0cceff;
+  margin: 10px 20px;
+  position: relative;
+  padding: 10px 0px 15px 0px; }
+
+.conf-title h1 {
+  color: #0cceff;
+  line-height: 1; }
+
+.cards {
+  background: #fff;
+  padding: 10px 10px 20px 10px; }
+  .cards p {
+    font-size: 13px;
+    color: #898989; }
+
+.nav-ui {
+  position: absolute;
+  margin-top: -10px; }
+  .nav-ui img {
+    width: 35px; }
+
+.mt30 {
+  margin-top: 30px; }
 
 /*!
   Ionicons, v2.0.1
