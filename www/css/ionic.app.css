@@ -193,6 +193,10 @@ a {
   background: url("../img/love-bg.jpg") no-repeat;
   background-size: cover; }
 
+.lie-bg {
+  background: url("../img/lie-bg.jpg") no-repeat;
+  background-size: cover; }
+
 .page-title h4 {
   margin: 0;
   color: #ffae00;
