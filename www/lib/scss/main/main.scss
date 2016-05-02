@@ -65,6 +65,9 @@ $font-family-light-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif-light 
 .calm-color {
   color: $calm;
 }
+.royal-color {
+  color: $royal;
+}
 //***** Font Famliy ********
 @font-face {
   font-family: 'lane.posh';
@@ -263,6 +266,10 @@ a {
   background: url('../img/goops-bg.jpg')no-repeat;
   background-size: cover;
 }
+.sexpert-bg {
+  background: url('../img/sexpert-bg.jpg')no-repeat;
+  background-size: cover;
+}
 .page-title {
   h4 {
     margin: 0;
@@ -328,15 +335,20 @@ a {
 .bg-black {
   background-color: #000;
 }
-.confes-box {
+.border-bl{
     border: 2px solid #0cceff;
+}
+.border-pr{
+    border: 2px solid $royal;
+}
+.confes-box {
+
     margin: 10px 20px;
     position: relative;
         padding: 10px 0px 15px 0px;
 }
 .conf-title{
   h1 {
-     color: #0cceff;
      line-height: 1;
  }
 }

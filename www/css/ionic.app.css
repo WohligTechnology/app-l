@@ -29,6 +29,9 @@ $dark:                            #444 !default;
 .calm-color {
   color: #0cceff; }
 
+.royal-color {
+  color: #b026ff; }
+
 @font-face {
   font-family: 'lane.posh';
   src: url("../fonts/lane.posh.ttf"); }
@@ -208,6 +211,10 @@ a {
   background: url("../img/goops-bg.jpg") no-repeat;
   background-size: cover; }
 
+.sexpert-bg {
+  background: url("../img/sexpert-bg.jpg") no-repeat;
+  background-size: cover; }
+
 .page-title h4 {
   margin: 0;
   color: #ffae00;
@@ -263,14 +270,18 @@ a {
 .bg-black {
   background-color: #000; }
 
+.border-bl {
+  border: 2px solid #0cceff; }
+
+.border-pr {
+  border: 2px solid #b026ff; }
+
 .confes-box {
-  border: 2px solid #0cceff;
   margin: 10px 20px;
   position: relative;
   padding: 10px 0px 15px 0px; }
 
 .conf-title h1 {
-  color: #0cceff;
   line-height: 1; }
 
 .cards {
