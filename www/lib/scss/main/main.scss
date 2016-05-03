@@ -271,6 +271,10 @@ a {
   background: url('../img/sexpert-bg.jpg')no-repeat;
   background-size: cover;
 }
+.quiery-bg {
+  background: url('../img/quiery-bg.jpg')no-repeat;
+  background-size: cover;
+}
 .page-title {
   h4 {
     margin: 0;
@@ -341,6 +345,12 @@ a {
 }
 .border-pr{
     border: 2px solid $royal;
+}
+.border-yl{
+    border: 2px solid #e1542e;
+}
+.yellow-color{
+  color:#e1542e;
 }
 .confes-box {
 
