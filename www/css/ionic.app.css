@@ -339,6 +339,13 @@ a {
   font-size: 12px;
   vertical-align: middle; }
 
+.by span {
+  color: #7d7d7d; }
+
+ion-item.item.item-complex.actives {
+  color: #218dfb;
+  border-left: 3px solid #218dfb; }
+
 /*!
   Ionicons, v2.0.1
   Created by Ben Sperry for the Ionic Framework, http://ionicons.com/
