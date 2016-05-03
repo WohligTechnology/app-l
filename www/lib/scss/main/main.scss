@@ -230,6 +230,7 @@ a {
     a {
       color: #7d7d7d;
       font-weight: 300;
+      font-size: 12px;
     }
   }
 }
@@ -370,6 +371,9 @@ color: #898989;
 .mt30{
   margin-top: 30px;
 }
+.mt20{
+  margin-top: 20px;
+}
 .pull-left{
   float: left;
 }
@@ -400,5 +404,18 @@ padding: 6px 7px;
   font-size: 16px;
     vertical-align: baseline;
     text-transform: capitalize;
+  }
+}
+.next-story{
+  button{
+    font-size: 14px;
+padding: 7px 10px;
+min-height: 20px;
+line-height: 1;
+  }
+  i{
+    font-size: 12px;
+vertical-align: middle;
+
   }
 }

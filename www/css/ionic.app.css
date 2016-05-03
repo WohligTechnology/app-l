@@ -177,7 +177,8 @@ a {
 
 .read-more span a {
   color: #7d7d7d;
-  font-weight: 300; }
+  font-weight: 300;
+  font-size: 12px; }
 
 .view-more {
   margin-top: 10px; }
@@ -300,6 +301,9 @@ a {
 .mt30 {
   margin-top: 30px; }
 
+.mt20 {
+  margin-top: 20px; }
+
 .pull-left {
   float: left; }
 
@@ -324,6 +328,16 @@ a {
   font-size: 16px;
   vertical-align: baseline;
   text-transform: capitalize; }
+
+.next-story button {
+  font-size: 14px;
+  padding: 7px 10px;
+  min-height: 20px;
+  line-height: 1; }
+
+.next-story i {
+  font-size: 12px;
+  vertical-align: middle; }
 
 /*!
   Ionicons, v2.0.1
