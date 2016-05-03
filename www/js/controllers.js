@@ -24,5 +24,8 @@ angular.module('starter.controllers', [])
 .controller('LoveQuieryCtrl', function($scope) {
 
 })
+.controller('DetailCtrl', function($scope) {
+
+})
 .controller('HomeCtrl', function($scope, $stateParams) {
 });

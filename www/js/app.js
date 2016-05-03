@@ -77,6 +77,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
+  .state('app.detail', {
+    url: '/detail',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/detail.html',
+        controller: 'DetailCtrl'
+      }
+    }
+  })
   .state('app.sexpert', {
     url: '/sexpert',
     views: {
