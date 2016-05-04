@@ -3,9 +3,7 @@ angular.module('starter.controllers', ['starter.services'])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
   })
-  .controller('LustCtrl', function($scope) {
 
-  })
   .controller('LoveCtrl', function($scope,$location,MyServices,$filter) {
     function getArticles(data) {
       // $scope.catColor = TemplateService.getheader(data.category.id);
@@ -28,7 +26,7 @@ console.log($location.path());
       console.log("Lie");
       break;
     case "/app/lust":
-      NavigationService.getCategoryArticles(3, getArticles);
+      MyServices.getCategoryArticles(3, getArticles);
       console.log("Lust");
       break;
     case "/app/confessions":
@@ -53,6 +51,9 @@ console.log($location.path());
   }
   })
   .controller('LieCtrl', function($scope,$location,MyServices,$filter) {
+
+  })
+  .controller('LustCtrl', function($scope,$location,MyServices,$filter) {
 
   })
   .controller('GoopsCtrl', function($scope) {

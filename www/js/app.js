@@ -37,7 +37,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/lust.html',
-        controller: 'LustCtrl'
+        controller: 'LoveCtrl'
       }
     }
   })
