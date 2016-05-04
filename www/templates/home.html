@@ -244,7 +244,7 @@ Roshan's Life?</h4>
       <div class="con-title">
         <h4 class="f300 border-blue display-inline mar15">CONFESSIONS</h4>
         <h4 class="font-robot-italic blue-color margin0">#51</h4>
-        <div class="desc"  ng-repeat="article in allCategory[4]">
+        <div class="desc"  ng-bind-html="allCategory[4][1].title">
           <p>{{blog.title}}</p>
         </div>
       </div>
@@ -309,7 +309,7 @@ Roshan's Life?</h4>
         <h4 class="f300 border-red display-inline mar15">Love Queries</h4>
         <h4 class="font-robot-italic red-color margin0">#51</h4>
         <div class="desc">
-          <p>I have just graduated and have been offered my dream job in Mumbai. But it will be moving away from my family and my boyfriend. I don’t know if i will be able to live without him.</p>
+          <p ng-bind-html="allCategory[6][1].title"></p>
         </div>
       </div>
       <div class="more">
@@ -317,7 +317,7 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By: Anonymous  |  1 Day ago</span>
+                <span>By: {{allCategory[6].author}}  |  {{allCategory[6].timestamp|date}}</span>
               </div>
 
             </div>
