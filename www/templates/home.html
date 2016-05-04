@@ -83,7 +83,7 @@
       </div>
         <div class="sliders">
           <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" auto-play="true">
-            <ion-slide>
+            <ion-slide >
               <div class="box blue">
                 <div class="slide1">
                   <div class="box1">
@@ -244,10 +244,8 @@ Roshan's Life?</h4>
       <div class="con-title">
         <h4 class="f300 border-blue display-inline mar15">CONFESSIONS</h4>
         <h4 class="font-robot-italic blue-color margin0">#51</h4>
-        <div class="desc">
-          <p>I was into a relationship for 5 years.. I loved him more than anything in this world. But we always fought. I never was loved by anyone.. Not by parents, not by sisters, friends betrayed me. Even he started behaving which i never expectd. Made
-            fun of me always, stopped hearing my problem, he just stopped talking with me. We lived together but he was never there with me. Ignored me for his friends, family.. Then he would always spend my money and will say he has spent alot on me
-            which i dont even...</p>
+        <div class="desc"  ng-repeat="article in allCategory[4]">
+          <p>{{blog.title}}</p>
         </div>
       </div>
       <div class="more">
@@ -255,7 +253,7 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By: Anonymous  |  1 Day ago</span>
+                <span>By:  {{allCategory[4].author}}  | {{allCategory[4].timestamp|date}}</span>
               </div>
             </div>
           </div>
@@ -279,7 +277,7 @@ Roshan's Life?</h4>
         <h4 class="f300 border-green display-inline mar15">Ask the sexpert</h4>
         <h4 class="font-robot-italic green-color margin0">#51</h4>
         <div class="desc">
-          <p>I had unprotected sex with my boyfriend. I am getting married soon, so will my husband and I be in the danger of contracting AIDS?</p>
+          <p ng-bind-html="allCategory[5][1].title"></p>
         </div>
       </div>
       <div class="more">
@@ -287,7 +285,7 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By: Anonymous  |  1 Day ago</span>
+                <span>By: {{allCategory[5].author}}  |  {{allCategory[5].timestamp|date}}</span>
               </div>
 
             </div>

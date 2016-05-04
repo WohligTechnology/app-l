@@ -28,9 +28,7 @@ angular.module('starter.controllers', ['starter.services'])
 
   })
   .controller('HomeCtrl', function($scope, $stateParams, MyServices, $timeout) {
-    $scope.allCategory = [
-      []
-    ];
+  $scope.allCategory = [];
 
     function getArticles(data) {
       console.log(data.category.id);
@@ -38,8 +36,8 @@ angular.module('starter.controllers', ['starter.services'])
         n.timestamp2 = moment(n.timestamp).toDate();
       });
       $scope.allCategory[parseInt(data.category.id)] = data.article;
+      console.log(data.article);
     }
-
     for (var i = 0; i < 7; i++) {
       $scope.allCategory.push([]);
       MyServices.getCategoryArticles(i + 1, getArticles);
