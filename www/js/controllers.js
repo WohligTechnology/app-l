@@ -6,8 +6,51 @@ angular.module('starter.controllers', ['starter.services'])
   .controller('LustCtrl', function($scope) {
 
   })
-  .controller('LoveCtrl', function($scope) {
-
+  .controller('LoveCtrl', function($scope,$location,MyServices) {
+    function getArticles(data) {
+      // $scope.catColor = TemplateService.getheader(data.category.id);
+      console.log(data);
+      $scope.category = data.catgory;
+      $scope.loveblog = data.article;
+      _.each($scope.loveblog, function(n) {
+        n.timestamp = moment(n.timestamp).toDate();
+      });
+      $scope.viewed = data.mostViewed;
+    }
+console.log($location.path());
+  switch ($location.path()) {
+    case "/app/love":
+      MyServices.getCategoryArticles(1, getArticles);
+      console.log("Love");
+      break;
+    case "/app/lie":
+      MyServices.getCategoryArticles(2, getArticles);
+      console.log("Lie");
+      break;
+    case "/app/lust":
+      NavigationService.getCategoryArticles(3, getArticles);
+      console.log("Lust");
+      break;
+    case "/app/confessions":
+      MyServices.getCategoryArticles(4, getArticles);
+      $scope.template = TemplateService.changecontent("sexpert");
+      console.log("confessions");
+      break;
+    case "/app/sexpert":
+      MyServices.getCategoryArticles(5, getArticles);
+      $scope.template = TemplateService.changecontent("sexpert");
+      console.log("sexpert");
+      break;
+    case "/app/queries":
+      MyServices.getCategoryArticles(6, getArticles);
+      $scope.template = TemplateService.changecontent("sexpert");
+      console.log("queries");
+      break;
+    case "/app/goops":
+      MyServices.getCategoryArticles(7, getArticles);
+      console.log("goops");
+      break;
+  }
   })
   .controller('LieCtrl', function($scope) {
 
