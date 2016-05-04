@@ -118,23 +118,23 @@ angular.module('starter', ['ionic', 'starter.controllers'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/home');
 })
-.filter('cuthtml', function () {
-	return function (value, wordwise, max, tail) {
-		if (!value) return '';
+.filter('cut', function() {
+  return function(value, wordwise, max, tail) {
+    if (!value) return '';
 
-		max = parseInt(max, 10);
-		if (!max) return value;
-		if (value.length <= max) return value;
-		value = value.rendered.substr(0, max);
-		if (wordwise) {
-			var lastspace = value.lastIndexOf(' ');
-			if (lastspace != -1) {
-				value = value.substr(0, lastspace);
-			}
-		}
+    max = parseInt(max, 10);
+    if (!max) return value;
+    if (value.length <= max) return value;
+    value = value.substr(0, max);
+    if (wordwise) {
+      var lastspace = value.lastIndexOf(' ');
+      if (lastspace != -1) {
+        value = value.substr(0, lastspace);
+      }
+    }
 
-		return value + (tail || ' …');
-	};
+    return value + (tail || ' …');
+  };
 })
 .filter('serverimage', function() {
   return function(image) {

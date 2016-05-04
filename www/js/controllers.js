@@ -6,7 +6,7 @@ angular.module('starter.controllers', ['starter.services'])
   .controller('LustCtrl', function($scope) {
 
   })
-  .controller('LoveCtrl', function($scope,$location,MyServices) {
+  .controller('LoveCtrl', function($scope,$location,MyServices,$filter) {
     function getArticles(data) {
       // $scope.catColor = TemplateService.getheader(data.category.id);
       console.log(data);
@@ -52,7 +52,7 @@ console.log($location.path());
       break;
   }
   })
-  .controller('LieCtrl', function($scope,$location,MyServices) {
+  .controller('LieCtrl', function($scope,$location,MyServices,$filter) {
 
   })
   .controller('GoopsCtrl', function($scope) {

@@ -7,7 +7,7 @@
 </div>
 <div class="list-all" ng-repeat="lie in loveblog">
   <div class="img-list">
-    <img ng-src="{{lie.img}}" alt="" class="full-image">
+    <img ng-src="{{lie.image|serverimage}}" alt="" class="full-image">
   </div>
   <div class="list-data padding-horizontal">
     <div class="card">
@@ -24,7 +24,7 @@
           </div>
           <div class="col-25">
             <div class="view-count pull-right">
-              <h4>250</h4>
+              <h4>{{lie.views}}</h4>
               <span>views</span>
             </div>
           </div>
@@ -32,7 +32,7 @@
         <div class="row">
           <div class="col">
             <div class="desc-all">
-              <p ng-bind-html="lie.desc| cut:true:367:'. . .'"> Sophia sat on the floor of her laundry room, looking at the lipstick mark on Peter’s shirt.</p>
+              <p ng-bind-html="lie.desc | cut:true:100:'. . .'"></p>
             </div>
           </div>
         </div>
