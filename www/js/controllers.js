@@ -31,12 +31,12 @@ console.log($location.path());
       break;
     case "/app/confessions":
       MyServices.getCategoryArticles(4, getArticles);
-      $scope.template = TemplateService.changecontent("sexpert");
+      // $scope.template = TemplateService.changecontent("sexpert");
       console.log("confessions");
       break;
     case "/app/sexpert":
       MyServices.getCategoryArticles(5, getArticles);
-      $scope.template = TemplateService.changecontent("sexpert");
+      // $scope.template = TemplateService.changecontent("sexpert");
       console.log("sexpert");
       break;
     case "/app/queries":

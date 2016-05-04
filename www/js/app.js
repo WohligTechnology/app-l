@@ -64,7 +64,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/confessions.html',
-        controller: 'ConfessionsCtrl'
+        controller: 'LoveCtrl'
       }
     }
   })
@@ -91,7 +91,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/sexpert.html',
-        controller: 'SexpertCtrl'
+        controller: 'LoveCtrl'
       }
     }
   })
