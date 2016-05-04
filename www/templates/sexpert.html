@@ -5,21 +5,54 @@
         <h4>Ask The Sexpert </h4>
       </div>
     </div>
-    <div class="list-all">
-      <div class="confes-box padding-horizontal border-pr">
-        <div class="conf-title">
-          <h1 class="royal-color">CONFESS
+    <div class="confes-box padding-horizontal border-pr">
+      <div class="conf-title">
+        <h1 class="royal-color">CONFESS
 YOUR SECRETS</h1>
-        </div>
-        <div class="cards">
-          <div class=" item-text-wrap">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-          </div>
-        </div>
-        <div class="nav-ui">
-            <img src="img/nav2.png" alt="">
+      </div>
+      <div class="cards">
+        <div class=" item-text-wrap">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
         </div>
       </div>
+      <div class="nav-ui">
+          <img src="img/nav2.png" alt="">
+      </div>
+    </div>
+    <div class="list-all"  ng-repeat="blog in loveblog track by $index">
+
+      <div class="mt30 padding-horizontal">
+        <div class="card">
+          <div class="item-text-wrap padd7">
+            <div class="fav pull-right">
+              <img src="img/lips4.png" alt="">
+            </div>
+            <div class="row">
+              <div class="col-75">
+                <div class="all-title">
+                  <span>{{blog.timestamp|date}} By {{blog.author}}</span>
+                  <h5 class="royal-color" ng-bind-html="blog.title | cut:true:50:'. . .'"></h5>
+                </div>
+              </div>
+              <div class="col-25">
+                <div class="view-count pull-right">
+                  <h4>{{blog.views}}</h4>
+                  <span>views</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="desc-all">
+                  <p ng-bind-html="blog.desc | cut:true:100:'. . .'"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="list-all">
       <div class="mt30 padding-horizontal">
         <div class="card">
           <div class="item-text-wrap padd7">
@@ -50,38 +83,6 @@ YOUR SECRETS</h1>
           </div>
         </div>
       </div>
-    </div>
-    <div class="list-all">
-      <div class="mt30 padding-horizontal">
-        <div class="card">
-          <div class="item-text-wrap padd7">
-            <div class="fav pull-right">
-              <img src="img/lips4.png" alt="">
-            </div>
-            <div class="row">
-              <div class="col-75">
-                <div class="all-title">
-                  <span>March 13, 2015 By LLL</span>
-                  <h4 class="royal-color">Love for Two, Please!</h4>
-                </div>
-              </div>
-              <div class="col-25">
-                <div class="view-count pull-right">
-                  <h4>250</h4>
-                  <span>views</span>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <div class="desc-all">
-                  <p>Sophia sat on the floor of her laundry room, looking at the lipstick mark on Peter’s shirt.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </div> -->
   </ion-content>
 </ion-view>
