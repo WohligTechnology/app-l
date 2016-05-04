@@ -52,7 +52,7 @@ console.log($location.path());
       break;
   }
   })
-  .controller('LieCtrl', function($scope) {
+  .controller('LieCtrl', function($scope,$location,MyServices) {
 
   })
   .controller('GoopsCtrl', function($scope) {

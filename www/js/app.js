@@ -46,7 +46,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     views: {
       'menuContent': {
         templateUrl: 'templates/lie.html',
-        controller: 'LieCtrl'
+        controller: 'LoveCtrl'
       }
     }
   })
