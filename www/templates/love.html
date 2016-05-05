@@ -5,12 +5,12 @@
   <h4>love</h4>
 </div>
 </div>
-<div class="list-all" ng-repeat="love in loveblog track by $index">
+<div class="list-all" ng-repeat="love in loveblog track by $index" ui-sref="app.detail({id:love.id})">
   <div class="img-list">
     <img ng-src="{{love.image|serverimage}}" alt="" class="full-image">
   </div>
   <div class="list-data padding-horizontal">
-    <div class="card">
+    <div class="card" >
 
       <div class="item-text-wrap padd7">
         <div class="fav pull-right">
