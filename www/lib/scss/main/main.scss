@@ -14,6 +14,7 @@ $color1: #898989;
 $color2: #969696;
 $color3: #323232;
 $color4: #25d045;
+$color5: #7d7d7d;
 $font-family-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif !default;
 $font-family-light-sans-serif: "Dosis", "lane.posh", "Roboto", sans-serif-light !default;
 @mixin square($some-number) {
@@ -89,7 +90,7 @@ a {
 }
 //header
 .title {
-  color: #fff !important;
+  color:$light !important;
 }
 .title-left {
   text-align: center !important;
@@ -98,7 +99,7 @@ a {
 .bar-stable {
   background-image: none !important;
   .button {
-    color: #fff !important;
+    color:$light !important;
   }
 }
 .pos-rel {
@@ -149,7 +150,7 @@ a {
 .text-data {
   padding: 0 0 0 12px;
   h4 {
-    color: #fff;
+    color: $light;
     font-size: 15px;
     font-weight: 400;
     margin: 0;
@@ -215,10 +216,10 @@ a {
     display: block;
     li {
       display: inline-block;
-      border-right: 1px solid #7d7d7d;
+      border-right: 1px solid $color5;
       padding: 0 6px;
       line-height: 1;
-      color: #7d7d7d;
+      color: $color5;
       &:last-child {
         border: none;
       }
@@ -228,7 +229,7 @@ a {
 .read-more {
   span {
     a {
-      color: #7d7d7d;
+      color:$color5;
       font-weight: 300;
       font-size: 12px;
     }
@@ -293,7 +294,7 @@ a {
 }
 .all-title {
   span {
-    color: #7d7d7d;
+    color: $color5;
     font-size: 15px;
   }
   h4 {
@@ -364,7 +365,7 @@ a {
  }
 }
 .cards {
-    background: #fff;
+    background: $light;
     padding: 10px 10px 20px 10px;
     p{
       font-size: 13px;
@@ -399,8 +400,8 @@ color: #898989;
 padding: 0px 2px;
       i{
 
-        color: #fff;
-background: #969696;
+        color:$light;
+background: $color2;
 height: 30px;
 width: 30px;
 border-radius: 100%;
@@ -431,39 +432,10 @@ vertical-align: middle;
 }
 .by{
   span{
-    color:#7d7d7d;
+    color:$color5;
   }
 }
 ion-item.item.item-complex.actives {
     color: $blue;
     border-left: 3px solid $blue;
-}
-img[imgloadingsec] {
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-img {
-    &.loading {
-      background-image: url(../img/loading.gif);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      opacity: 1;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px !important;
-      height: 100px !important;
-    }
-    &.doneLoading {
-      opacity: 1;
-    }
 }

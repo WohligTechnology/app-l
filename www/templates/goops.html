@@ -5,7 +5,7 @@
   <h4> Goops</h4>
 </div>
 </div>
-<div class="list-all" ng-repeat="goops in loveblog track by $index">
+<div class="list-all" ng-repeat="goops in loveblog track by $index" ui-sref="app.detail({id:goops.id})">
   <div class="img-list">
     <img ng-src="{{goops.image|serverimage}}" alt="" class="full-image">
   </div>

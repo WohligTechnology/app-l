@@ -83,7 +83,7 @@ angular.module('starter.controllers', ['starter.services'])
 
   })
 
-.controller('DetailCtrl', function($scope, MyServices, $stateParams) {
+.controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout) {
   $scope.id = $stateParams.id;
   MyServices.getArticle($scope.id, function(data) {
     console.log(data);

@@ -5,7 +5,7 @@
   <h4> Lie</h4>
 </div>
 </div>
-<div class="list-all" ng-repeat="lie in loveblog track by $index">
+<div class="list-all" ng-repeat="lie in loveblog track by $index" ui-sref="app.detail({id:lie.id})">
   <div class="img-list">
     <img ng-src="{{lie.image|serverimage}}" alt="" class="full-image">
   </div>
