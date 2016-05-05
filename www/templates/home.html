@@ -84,24 +84,23 @@
         <div class="sliders">
           <ion-slide-box on-slide-changed="slideHasChanged($index)" does-continue="true" auto-play="true">
             <ion-slide >
-              <div class="box blue">
-                <div class="slide1">
+              <div class="box blue" >
+                <div class="slide1" ng-repeat="goops in allCategory[7]"  ng-if="$index <3">
                   <div class="box1">
                     <div class="row padding0">
                       <div class="col-25 padding0">
                         <div class="img-1">
-                          <img src="img/s1.jpg" alt="" class="full-image">
+                          <img  ng-src={{goops.image|serverimage}} alt="" class="full-image">
                         </div>
                       </div>
                       <div class="col-75">
                         <div class="text-data">
-                          <h4>Awkward! This Singer Tried Flirting With
-A 15 Year Old On Stage! </h4>
+                          <h4 > {{goops.title}}</h4>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="box1">
+                  <!-- <div class="box1">
                     <div class="row padding0">
                       <div class="col-25 padding0">
                         <div class="img-1">
@@ -129,12 +128,12 @@ For Wife’s Comfort?</h4>
 Roshan's Life?</h4>
                         </div>
                       </div>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
               </div>
             </ion-slide>
-            <ion-slide>
+            <!-- <ion-slide>
               <div class="box blue">
                 <div class="slide1">
                   <div class="box1">
@@ -235,7 +234,7 @@ Roshan's Life?</h4>
                   </div>
                 </div>
               </div>
-            </ion-slide>
+            </ion-slide> -->
           </ion-slide-box>
         </div>
       </div>
