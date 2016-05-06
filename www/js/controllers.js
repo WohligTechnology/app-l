@@ -82,6 +82,7 @@ angular.module('starter.controllers', ['starter.services'])
   .controller('LoveQuieryCtrl', function($scope) {
 
   })
+
   .controller('qdetailCtrl', function($scope,MyServices, $stateParams, $timeout) {
     $scope.id = $stateParams.id;
     MyServices.getArticle($scope.id, function(data) {
@@ -89,6 +90,7 @@ angular.module('starter.controllers', ['starter.services'])
       $scope.article = data;
       $scope.headerClass = MyServices.getheader(data.category.id);
     });
+
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document,
         s = d.createElement('script');
@@ -106,6 +108,10 @@ angular.module('starter.controllers', ['starter.services'])
     console.log(data);
     $scope.article = data;
     $scope.headerClass = MyServices.getheader(data.category.id);
+    // console.log($scope.headerClass);
+    // if($scope.headerClass=="put-me-love"){
+    //
+    // }
   });
   (function() { // DON'T EDIT BELOW THIS LINE
     var d = document,

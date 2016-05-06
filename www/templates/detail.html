@@ -1,8 +1,8 @@
-<ion-view ng-class="headerClass">
+<ion-view>
   <ion-content class="bg-black">
-<div class="love-bg">
+<div ng-class="headerClass.header">
 <div class="page-title padding-horizontal">
-  <h4>love</h4>
+  <h4>{{headerClass.title}}</h4>
 </div>
 </div>
 <div class="list-all" >
@@ -20,7 +20,7 @@
           <div class="col-75">
             <div class="all-title">
               <span>{{article.article.timestamp|date}} By {{article.article.author}}</span>
-              <h4 class="positive-color">{{article.article.title}}</h4>
+              <h4 ng-class="headerClass.color">{{article.article.title}}</h4>
             </div>
           </div>
           <div class="col-25">
