@@ -87,8 +87,9 @@ angular.module('starter.controllers', ['starter.services'])
     $scope.id = $stateParams.id;
       globalfunction.showLoading();
     MyServices.getArticle($scope.id, function(data) {
-      console.log(data);
+      // console.log(data);
       $scope.article = data;
+      $scope.article.article.timestamp = moment($scope.article.article.timestamp).toDate();
       $scope.headerClass = MyServices.getheader(data.category.id);
     });
     function loadArticle(data) {
