@@ -82,7 +82,13 @@ angular.module('starter.controllers', ['starter.services'])
   .controller('LoveQuieryCtrl', function($scope) {
 
   })
-  .controller('QueryDetailCtrl', function($scope) {
+  .controller('qdetailCtrl', function($scope,MyServices, $stateParams, $timeout) {
+    $scope.id = $stateParams.id;
+    MyServices.getArticle($scope.id, function(data) {
+      console.log(data);
+      $scope.article = data;
+      $scope.headerClass = MyServices.getheader(data.category.id);
+    });
 
   })
 

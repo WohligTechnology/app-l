@@ -105,12 +105,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
-  .state('app.query-detail', {
-      url: '/query-detail',
+  .state('app.qdetail', {
+      url: '/qdetail/:id',
       views: {
         'menuContent': {
-          templateUrl: 'templates/query-detail.html',
-          controller: 'QueryDetailCtrl'
+          templateUrl: 'templates/qdetail.html',
+          controller: 'qdetailCtrl'
         }
       }
     })

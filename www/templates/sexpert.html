@@ -19,7 +19,7 @@ YOUR SECRETS</h1>
           <img src="img/nav2.png" alt="">
       </div>
     </div>
-    <div class="list-all"  ng-repeat="blog in loveblog track by $index">
+    <div class="list-all"  ng-repeat="blog in loveblog track by $index" ui-sref="app.qdetail({id:blog.id})">
 
       <div class="mt30 padding-horizontal">
         <div class="card">
