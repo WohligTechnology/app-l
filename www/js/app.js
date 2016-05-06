@@ -68,12 +68,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
       }
     }
   })
-  .state('app.love-quiery', {
-    url: '/love-quiery',
+  .state('app.queries', {
+    url: '/queries',
     views: {
       'menuContent': {
-        templateUrl: 'templates/love-quiery.html',
-        controller: 'LoveQuieryCtrl'
+        templateUrl: 'templates/queries.html',
+        controller: 'LoveCtrl'
       }
     }
   })

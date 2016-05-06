@@ -54,7 +54,7 @@ angular.module('starter.controllers', ['starter.services'])
       break;
     case "/app/queries":
       MyServices.getCategoryArticles(6, getArticles);
-      $scope.template = TemplateService.changecontent("sexpert");
+      // $scope.template = TemplateService.changecontent("sexpert");
       console.log("queries");
       break;
     case "/app/goops":
@@ -89,7 +89,15 @@ angular.module('starter.controllers', ['starter.services'])
       $scope.article = data;
       $scope.headerClass = MyServices.getheader(data.category.id);
     });
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement('script');
 
+      s.src = '//lustlielove.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
   })
 
 .controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout) {
@@ -99,7 +107,15 @@ angular.module('starter.controllers', ['starter.services'])
     $scope.article = data;
     $scope.headerClass = MyServices.getheader(data.category.id);
   });
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document,
+      s = d.createElement('script');
 
+    s.src = '//lustlielove.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
 })
 
 .controller('HomeCtrl', function($scope, $stateParams, MyServices, $timeout, $ionicLoading) {
