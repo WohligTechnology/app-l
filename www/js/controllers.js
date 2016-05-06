@@ -146,6 +146,15 @@ angular.module('starter.controllers', ['starter.services'])
 })
 
 .controller('HomeCtrl', function($scope, $stateParams, MyServices, $timeout, $ionicLoading) {
+
+  $scope.id = $stateParams.id;
+    globalfunction.showLoading();
+  MyServices.getArticle($scope.id, function(data) {
+    console.log(data);
+    $scope.article = data;
+    $scope.headerClass = MyServices.getheader(data.category.id);
+
+  });
   $scope.allCategory = [];
 
   function getArticles(data) {

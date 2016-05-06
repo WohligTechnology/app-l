@@ -3,7 +3,7 @@
     <img src="img/logo.png">
   </ion-nav-title> -->
   <ion-content >
-    
+
     <div class="row padding0">
       <div class="col col-50 padding0">
         <div class="img-bg" ui-sref="app.love">
@@ -253,13 +253,13 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By:  {{allCategory[4].author}}  | {{allCategory[4].timestamp|date}}</span>
+                <span>By:  {{allCategory[4][1].author}}  | {{allCategory[4][1].timestamp|date}}</span>
               </div>
             </div>
           </div>
           <div class="col-25">
             <div class="read-more pull-right">
-              <span><a href="" class="font-robot-italic">READ MORE</a></span>
+              <span><a href="" class="font-robot-italic" ui-sref="app.qdetail({id:allCategory[4][1].id})">READ MORE</a></span>
             </div>
           </div>
         </div>
@@ -285,14 +285,14 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By: {{allCategory[5].author}}  |  {{allCategory[5].timestamp|date}}</span>
+                <span>By: {{allCategory[5][1].author}}  |  {{allCategory[5][1].timestamp|date}}</span>
               </div>
 
             </div>
           </div>
           <div class="col-25">
             <div class="read-more pull-right">
-              <span><a href="" class="font-robot-italic">READ MORE</a></span>
+              <span><a href="" class="font-robot-italic" ui-sref="app.qdetail({id:allCategory[5][1].id})">READ MORE</a></span>
             </div>
           </div>
         </div>
@@ -317,14 +317,14 @@ Roshan's Life?</h4>
           <div class="col-75">
             <div class="list-more">
               <div class="by">
-                <span>By: {{allCategory[6].author}}  |  {{allCategory[6].timestamp|date}}</span>
+                <span>By: {{allCategory[6][1].author}}  |  {{allCategory[6][1].timestamp|date}}</span>
               </div>
 
             </div>
           </div>
           <div class="col-25">
             <div class="read-more display-inline pull-right">
-              <span><a href="" class="font-robot-italic">READ MORE</a></span>
+              <span><a href="" class="font-robot-italic" ui-sref="app.qdetail({id:allCategory[6][1].id})">READ MORE</a></span>
             </div>
           </div>
         </div>
