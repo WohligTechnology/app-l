@@ -83,8 +83,9 @@ angular.module('starter.controllers', ['starter.services'])
 
   })
 
-  .controller('qdetailCtrl', function($scope,MyServices, $stateParams, $timeout) {
+  .controller('qdetailCtrl', function($scope,MyServices, $stateParams, $timeout,$ionicLoading) {
     $scope.id = $stateParams.id;
+      globalfunction.showLoading();
     MyServices.getArticle($scope.id, function(data) {
       console.log(data);
       $scope.article = data;
@@ -110,9 +111,10 @@ angular.module('starter.controllers', ['starter.services'])
     })();
   })
 
-.controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout) {
+.controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout,$ionicLoading) {
 
   $scope.id = $stateParams.id;
+    globalfunction.showLoading();
   MyServices.getArticle($scope.id, function(data) {
     console.log(data);
     $scope.article = data;
