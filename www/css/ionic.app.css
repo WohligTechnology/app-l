@@ -50,7 +50,7 @@ a {
   padding-top: 9px; }
 
 .title {
-  color: #fff !important; }
+  color: #ffffff !important; }
 
 .title-left {
   text-align: center !important;
@@ -59,7 +59,7 @@ a {
 .bar-stable {
   background-image: none !important; }
   .bar-stable .button {
-    color: #fff !important; }
+    color: #ffffff !important; }
 
 .pos-rel {
   position: relative;
@@ -108,7 +108,7 @@ a {
 .text-data {
   padding: 0 0 0 12px; }
   .text-data h4 {
-    color: #fff;
+    color: #ffffff;
     font-size: 15px;
     font-weight: 400;
     margin: 0; }
@@ -296,7 +296,7 @@ a {
   line-height: 1; }
 
 .cards {
-  background: #fff;
+  background: #ffffff;
   padding: 10px 10px 20px 10px; }
   .cards p {
     font-size: 13px;
@@ -327,7 +327,7 @@ a {
     font-size: 16px;
     padding: 0px 2px; }
     .share-list ul li i {
-      color: #fff;
+      color: #ffffff;
       background: #969696;
       height: 30px;
       width: 30px;
@@ -355,32 +355,6 @@ a {
 ion-item.item.item-complex.actives {
   color: #218dfb;
   border-left: 3px solid #218dfb; }
-
-img[imgloadingsec] {
-  opacity: 0;
-  -webkit-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  transition: all 1s ease; }
-
-img.loading {
-  background-image: url(../img/loading.gif);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  opacity: 1;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 100px !important;
-  height: 100px !important; }
-
-img.doneLoading {
-  opacity: 1; }
 
 /*!
   Ionicons, v2.0.1

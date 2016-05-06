@@ -82,6 +82,9 @@ angular.module('starter.controllers', ['starter.services'])
   .controller('LoveQuieryCtrl', function($scope) {
 
   })
+  .controller('QueryDetailCtrl', function($scope) {
+
+  })
 
 .controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout) {
   $scope.id = $stateParams.id;

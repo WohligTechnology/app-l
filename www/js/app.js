@@ -105,6 +105,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
         }
       }
     })
+  .state('app.query-detail', {
+      url: '/query-detail',
+      views: {
+        'menuContent': {
+          templateUrl: 'templates/query-detail.html',
+          controller: 'QueryDetailCtrl'
+        }
+      }
+    })
     .state('app.home', {
       url: '/home',
       views: {
