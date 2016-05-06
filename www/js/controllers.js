@@ -90,7 +90,15 @@ angular.module('starter.controllers', ['starter.services'])
       $scope.article = data;
       $scope.headerClass = MyServices.getheader(data.category.id);
     });
+    function loadArticle(data) {
 
+    data.article.timestamp = moment(data.article.timestamp).toDate();
+    $scope.article = data.article;
+    $scope.article.next = data.next;
+    $scope.article.prev = data.prev;
+    $scope.recommended = data.recommended;
+    // console.log($scope.template);
+  }
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document,
         s = d.createElement('script');
@@ -103,6 +111,7 @@ angular.module('starter.controllers', ['starter.services'])
   })
 
 .controller('DetailCtrl', function($scope, MyServices, $stateParams, $timeout) {
+
   $scope.id = $stateParams.id;
   MyServices.getArticle($scope.id, function(data) {
     console.log(data);
@@ -113,6 +122,15 @@ angular.module('starter.controllers', ['starter.services'])
     //
     // }
   });
+  function loadArticle(data) {
+
+  data.article.timestamp = moment(data.article.timestamp).toDate();
+  $scope.article = data.article;
+  $scope.article.next = data.next;
+  $scope.article.prev = data.prev;
+  $scope.recommended = data.recommended;
+  // console.log($scope.template);
+}
   (function() { // DON'T EDIT BELOW THIS LINE
     var d = document,
       s = d.createElement('script');
